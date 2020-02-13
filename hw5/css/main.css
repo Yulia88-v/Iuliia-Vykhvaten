@@ -1,0 +1,17 @@
+/*CSS document***/
+h1{
+	color: #423361;
+	font-size: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+td{
+	text-align: center;
+	font-size: 14px;
+}
+.group{
+	text-transform: uppercase;
+	color: #423361;
+	background: #d5cce8;
+	
+}
