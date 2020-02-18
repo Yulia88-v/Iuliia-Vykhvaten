@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fonts</title>
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+
+</head>
+<body>
+<div class="menu">
+<ul>
+<li><a href="" class="item active">Главная</a></li>
+<li><a href="" class="item">О нас</a></li>
+<li><a href="" class="item">Контакты</a></li>
+</ul>
+</div>
+<h1>Урок 8<br><span>"Подключения шрифтов"</b></span></h1>
+
+<h2>Оформить заявку на участия урока</h2>
+<form id="form" class="form" action="/contact.php" method="post">
+	<div>
+		<label for="name">Ваше имя:</label>
+		<input type="text" id="name" placeholder="Ваше имя">
+	</div>
+	<div>
+		<label for="phone">Ваше телефон:</label>
+		<input type="text" id="phone" placeholder="Ваш телефон">
+	</div>
+	<div>
+		<label for="email">Ваша почта:</label>
+		<input type="text" id="email" placeholder="Ваша почта">
+	</div>
+	<div>
+		<label for="comments">Ваш комментарий:</label>
+		<input type="textarea" name ="textarea" id="comments" placeholder="Ваш комментарий"	maxlength="160">
+	</div>
+	<div class="send">
+        <button type="button" id="button">Оформить сейчас</button>
+        <button type="button" id="button" onclick="form.reset()">Очистить</button>
+    </div>
+</form>
+
+</body>
+</html>
