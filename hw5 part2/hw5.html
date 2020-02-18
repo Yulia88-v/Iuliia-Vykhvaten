@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<h2>Оформить заявку на участия урока</h2>
+<form id="form" class="form" action="/contact.php" method="post">
+	<div>
+		<label for="name">Ваше имя:</label>
+		<input type="text" id="name" placeholder="Ваше имя" maxlength="30">
+	</div>
+	<div>
+		<label for="phone">Ваше телефон:</label>
+		<input type="text" id="phone" placeholder="Ваш телефон"maxlength="30">
+	</div>
+	<div>
+		<label for="comments">Ваш комментарий:</label>
+		<input type="textarea" name ="textarea" id="comments" placeholder="Ваш комментарий"	maxlength="140">
+	</div>
+	<div class="list">
+		<select name="list">
+			<option>Выберите Ваш возраст</option>
+			<option>16-20</option>	
+			<option>21-28</option>
+			<option>29-38</option>
+			<option>39-48</option>
+			<option>49-58</option>
+		</select>
+	</div>
+	<div class="send">
+        <button type="button" id="button">Оформить сейчас</button>
+        <button type="button" id="button" onclick="form.reset()">Очистить</button>
+    </div>
+</form>
+
+</body>
+</html>
