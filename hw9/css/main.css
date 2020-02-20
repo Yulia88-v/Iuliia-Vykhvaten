@@ -1,0 +1,75 @@
+///***Fonts styles
+
+font-family: 'open_sansbold';
+font-family: 'open_sansbold_italic';
+font-family: 'open_sansextrabold';
+font-family: 'open_sansextrabold_italic';
+font-family: 'open_sansitalic';
+font-family: 'open_sanslight';
+font-family: 'open_sanslight_italic';
+font-family: 'open_sansregular';
+font-family: 'open_sanssemibold';
+font-family: 'open_sanssemibold_italic';
+*****/ 
+*{
+	padding: 0px;
+	margin: 0;
+}
+
+fieldset{
+	width: 400px;
+	text-align: center;	
+	background: #d1d0d3;	
+}
+
+h2{
+	font-family: 'open_sanssemibold';
+	font-size: 24px;
+	color: #318bb1;
+	padding-left: 20px;
+	
+}
+
+ 
+ input{
+text-align: center;
+border-color: #318bb1;
+font-family: 'open_sanssemibold_italic';
+color: #27242c;
+font-size: 16px;
+margin: 7px 0;
+background: #fff;
+ }
+ 
+ #button{
+ 	background: #ead29d;
+ 	color: #6a0756;
+ 	font-size: 16px;
+ 	font-family: 'open_sanslight';
+ 	border-radius: 30px;
+ }
+ .table{
+ 	width: 400px;
+ 	overflow-x: scroll;
+ }
+
+ .box_table{
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 50px;
+	
+}
+table{
+padding: 10px;
+border-spacing: inherit;
+}
+table tr td {
+	border:solid 1px #000;
+border-spacing: inherit;
+padding: 10px 80px;
+}
+.scroll {
+	background: #c5c4c6;
+}
