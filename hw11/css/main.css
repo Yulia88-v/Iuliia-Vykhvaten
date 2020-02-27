@@ -1,0 +1,120 @@
+/********z-index*****/
+*{
+	padding: 0;
+	margin: 0;
+}
+.first, .second, 
+.third {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+	.first{
+	top: 25px;
+	left: 0px;
+	background: #8688de;
+	border: solid 1px #363762;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	z-index: 3;
+	
+}
+.second{
+	
+    top: 15px;
+    left: 30px;
+    background: #6063cb;
+    border: solid 1px #363762;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 2;
+}
+.third{
+	
+	top: 5px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	left: 60px;
+    background: #32358f;
+    border: solid 1px #363762;
+    z-index: 1;
+}
+.first:hover{
+	z-index:1;
+	background: #9ae4e5;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.second:hover{
+z-index: 1;
+	background: #5abfc0;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.third:hover{
+	z-index: 4;
+	background: #13a2a4;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/********triangle*******/
+.triangle{
+	width: 0;
+    height: 0;
+    border-bottom: 140px solid #fcf921;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: relative;
+    margin: 0 auto;
+   top: 60px;
+}
+.triangle:hover{
+	width: 0;
+    height: 0;
+    border-bottom:0;
+    border-top: 140px solid #20a3bf;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
+.triangle_left{
+	position: relative;
+	margin: 0 auto;
+	top: 80px;
+	    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-right: 140px solid #6bbf20;
+    border-bottom: 70px solid transparent;
+}
+.triangle_left:hover{
+	    width: 0;
+    height: 0;
+    border-right:0;
+    border-top: 70px solid transparent;
+    border-left: 140px solid #20a3bf;
+    border-bottom: 70px solid transparent;
+}
+
+/*******Color******/
+.ellipse{
+position: relative;
+width: 451px;
+height: 440px;
+top: 20px;
+left: 30px;
+border-radius: 50%;
+background: linear-gradient(180deg, #775A9B 0%, rgba(255, 255, 255, 0) 100%), #D979F1;
+}
+.ellipse2{
+	position: relative;
+	margin-top: 50px;
+	left: 30px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	background: radial-gradient(#9de2e3,#68a4a5,#365e5e,#122424)
+}
+.ellipse3{
+	position: relative;
+	margin-top: 40px;
+	left: 30px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	background: linear-gradient(69deg, #91B015 22.4%, #319E16 39.58%, #3E99ED 58.85%, rgba(4, 111, 59, 0.96) 76.04%);
+}
