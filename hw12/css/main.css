@@ -1,0 +1,119 @@
+/********First*****/
+.image img{
+	width: auto;
+	height: auto;
+	transition: 3s linear;
+}
+.image img:hover{
+		transform: scaleX(-1); 
+	}
+	.animation{
+		height:500px;
+  width:500px;
+  margin-top: 150px;
+	}
+.circle{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: relative;
+	background:  radial-gradient(#f1d1f3, #f2baf5, #e38ae9);
+	left:130px;
+	animation: Orbita 15s linear;
+	animation-iteration-count: 3;
+}
+@-webkit-keyframes Orbita {
+  from {
+                transform: rotate(0deg)
+                           translate(-150px)
+                           rotate(0deg);
+
+        }
+
+        to {
+                transform: rotate(360deg)
+                           translate(-150px)
+                           rotate(-360deg);
+                background: radial-gradient(#f5f5f9, #6b70d9, #2a30aa);
+        }
+}
+.square{
+	margin-top: 80px;
+	width: 50px;
+		height: 50px;
+		position: relative;
+		background: #c08d20;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		animation: square 7s;
+		animation-iteration-count: 3;
+}
+@keyframes square{
+		from{
+			top:0;
+			left:0;
+		}
+		25%{
+			top: 0px;
+			left:200px;
+			background: #e9e57e
+		}
+		50%{
+			left: 200px;
+			top:200px;
+			background: #36c25e;
+		}
+		75%{
+           top: 200px;
+           left:0px;
+           background: #e9cf8a;
+		}
+		to{
+			top:0;
+		}
+	}
+
+.triangle{
+	width: 0;
+    height: 0;
+    border-bottom: 70px solid #3aa0ac;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    position: relative;
+    box-shadow: inset 4px 8px 8px rgba(0, 0, 0, 0.8);
+    margin-top:50px;
+    animation: triangle 7s;
+	animation-iteration-count: 3;
+}
+@keyframes triangle{
+		from{
+			bottom:0;
+			left:0;
+		}
+		25%{
+			bottom: 0px;
+			left:200px;
+			border-bottom: 70px solid #e9e57e;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+			box-shadow: inset 4px 8px 8px rgba(0, 0, 0, 0.8);
+		}
+		50%{
+			left: 200px;
+			bottom:200px;
+			border-bottom: 70px solid #36c25e;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+			box-shadow: inset 4px 8px 8px rgba(0, 0, 0, 0.8);
+		}
+		75%{
+           bottom: 200px;
+           left:0px;
+           border-bottom: 70px solid #e9cf8a;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+          box-shadow: inset 4px 8px 8px rgba(0, 0, 0, 0.8);
+		}
+		to{
+			bottom:0;
+		}
+	}
