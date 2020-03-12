@@ -67,6 +67,8 @@
   color: crimson;
 transform: scale(.85);
   animation: pulse 2s ease-in-out infinite;
+  width: 5px;
+  height: 4px;
 }
 
 @keyframes pulse {

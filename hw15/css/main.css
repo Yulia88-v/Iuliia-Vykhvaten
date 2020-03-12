@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height:100%;
+	}
+body{
+	font-size:14px;
+	color:#000;
+	font-family: 'vidaloka_regular';
+	}
+.header{
+	z-index: 2;
+    position: relative;
+	padding-top:60px;
+	
+	}
+	.first{
+		padding-bottom:25px;
+		border-bottom:solid 1px #99888d;
+	}
+
+/*******section1*****/
+.baner-home{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	background:url(../img/fone-home.jpg) no-repeat;
+	background-size:cover;
+	background-position:center center;
+	padding-bottom:10px;
+	    width: 100%;
+	}
+#slider-baner .owl-item .item h2{
+	text-align:center;
+	color:#fff;
+	font-size:110px;
+	font-family: 'back_to_black_demoregular';
+	}
+#slider-baner .owl-item .item .text-slider{
+	font-size:280px;
+	font-family: 'back_to_black_demoregular';
+	text-align:center;
+	color:#fff;
+	margin-top: -34px;
+	}
+
+#slider-baner{
+	padding-top:300px;
+	}
+
+/*menu*/
+.btn_menu{
+	display:none;
+	}
+.nav-menu{
+	padding-top:18px;
+	display:flex;
+	justify-content:center;
+} 
+.nav-menu ul{
+display:flex;
+}
+.nav-menu ul li{
+list-style:none;
+margin-right:44px;
+}
+.nav-menu ul li:last-child{
+margin-right:0;
+} 
+.nav-menu ul li a{
+transition:0.3s;
+color:#fff;
+text-transform:uppercase;
+font-size:13px;
+}
+.nav-menu ul li.active a,
+.nav-menu ul li a:hover{
+text-decoration:none;
+padding-bottom:37px;
+color:#ffeb3b;
+border-bottom:solid 2px #ffeb3b;
+}
+.search{
+	position: relative;
+	float: right;
+	padding-top: 18px; 
+}
+.search:before{
+	content: "|";
+	margin-right: 26px;
+	color: #fff;
+	size: 30px; 
+}
+
+/********section3*****/
+.title3{
+	position: relative;
+	margin-top: 820px;
+	font-family: inherit;
+	text-align: center;
+	font-size: 34px;
+
+}
+.title3 h2{
+	color: #333333;
+	line-height: 2;
+}
+.title3 span{
+ color: #ffeb3b;
+ border-bottom: solid 2px #ffeb3b;
+}
+
+.service{
+	position: relative;
+	margin-top: 150px;
+	
+    width: 100%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+.service img, .service2 img{
+	margin-left: 80px;
+}
+
+.service h3, .service2 h3{
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+.service p, .service2 p{
+	font-family: inherit;
+	font-size: 15px;
+	text-align: left;
+}
+.service2{
+	position: relative;
+	margin-top: 95px;
+    width: 100%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+.service img, .service2 img:hover{
+	color: #ffeb3b;
+}
