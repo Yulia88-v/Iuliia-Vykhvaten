@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height:100%;
+	}
+body{
+	font-size:14px;
+	color:#000;
+	font-family: 'vidaloka_regular';
+	}
+.header{
+	z-index: 2;
+    position: relative;
+	padding-top:60px;
+	
+	}
+	.first{
+		padding-bottom:25px;
+		border-bottom:solid 1px #99888d;
+	}
+
+/*******section1*****/
+.baner-home{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	background:url(../img/fone-home.jpg) no-repeat;
+	background-size:cover;
+	background-position:center center;
+	padding-bottom:10px;
+	    width: 100%;
+	}
+#slider-baner .owl-item .item h2{
+	text-align:center;
+	color:#fff;
+	font-size:110px;
+	font-family: 'back_to_black_demoregular';
+	}
+#slider-baner .owl-item .item .text-slider{
+	font-size:280px;
+	font-family: 'back_to_black_demoregular';
+	text-align:center;
+	color:#fff;
+	margin-top: -34px;
+	}
+
+#slider-baner{
+	padding-top:300px;
+	}
+
+/*menu*/
+.btn_menu{
+	display:none;
+	}
+.nav-menu{
+	padding-top:18px;
+	display:flex;
+	justify-content:center;
+} 
+.nav-menu ul{
+display:flex;
+}
+.nav-menu ul li{
+list-style:none;
+margin-right:44px;
+}
+.nav-menu ul li:last-child{
+margin-right:0;
+} 
+.nav-menu ul li a{
+transition:0.3s;
+color:#fff;
+text-transform:uppercase;
+font-size:13px;
+}
+.nav-menu ul li.active a,
+.nav-menu ul li a:hover{
+text-decoration:none;
+padding-bottom:37px;
+color:#ffeb3b;
+border-bottom:solid 2px #ffeb3b;
+}
+.search{
+	position: relative;
+	float: right;
+	padding-top: 18px; 
+}
+.search:before{
+	content: "|";
+	margin-right: 26px;
+	color: #fff;
+	size: 30px; 
+}
+
+/********section3*****/
+.title3{
+	position: relative;
+	margin-top: 820px;
+	font-family: 'vidaloka_regular';
+	text-align: center;
+	font-size: 34px;
+
+}
+
+.icon1:nth-child(1){
+	background: url(../img/ic1.png) no-repeat;
+	
+	height: 50px;
+	width: 40px;
+	}
+.icon1:nth-child(1):hover{
+filter: sepia(100%);
+
+	}
+.title3 h2{
+	color: #333333;
+	line-height: 2;
+}
+.title3 span{
+ color: #ffeb3b;
+ border-bottom: solid 2px #ffeb3b;
+}
+.service{
+	margin-top: 160px;
+}
+.service2{
+	margin-top: 100px;
+}
+.service .border_ser h3, .service2 .border_ser h3{
+	font-family: 'vidaloka_regular';
+	font-size: 15px;
+	color: #313131;
+	font-weight: bold;
+	text-align: left;
+}
+.service .border_ser, .service2 .border_ser{
+	border-left: 1px solid #f1f1f1;
+
+}
+.service .border_ser p, .service2 .border_ser p{
+	font-family: 'vidaloka_regular';
+	font-size: 13px;
+	color: #969595;
+	text-align: left;
+}
+/*************section4**********/
+.back_res{
+	background: url(../img/back4.png);
+	margin-top: 160px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.result{
+	text-align: center;
+}
+.result .numbers{
+	margin-top: 50px;
+	font-size: 45px;
+	color: #fff;
+}
+.result h3{
+	margin-top: 50px;
+	text-transform: uppercase;
+    font-size: 20px;
+    color: #fcde30;
+    font-family: 'vidaloka_regular';
+
+}
