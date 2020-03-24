@@ -1,0 +1,281 @@
+@media(max-width:1199px){
+	.form-search{
+		padding-top:6px;
+		}
+	}
+@media(max-width:991px){
+	 .logo{
+		 display:block;
+		     margin-bottom: 20px;
+		 }
+	.logo img{
+	  display: block;
+      margin: 0 auto;
+		}
+	.nav-menu ul{
+		display:none;
+		}
+	.responsive_menu {
+	background: rgba(92,95,102,0.2);
+    width:29%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu{
+	margin-bottom:20px;
+    display: block;
+    justify-content: inherit;
+	}
+.name_menu{
+	font-family: 'back_to_black_demoregular';
+	font-size:16px;
+	color:#333;
+	}
+.btn_menu i{
+	color:#333;
+	font-size:23px;
+	transition:0.3s;
+	cursor:pointer;
+	}
+.btn_menu i:hover{
+	opacity:0.6;
+	}
+.nav-menu ul{
+	background: rgba(92,95,102,0.7);
+	padding:10px;
+	border-top:2px #333 solid;
+	}
+.nav-menu ul li a {
+    transition: 0.3s;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 27px;
+}
+.nav-menu > ul:nth-child(2) {
+ width: 210px;
+}
+.nav-menu ul li {
+    margin-right: 0;
+}
+.nav-menu ul li.active a, 
+.nav-menu ul li a:hover {
+    text-decoration: none;
+    padding-bottom: inherit;
+    color: #ffeb3b;
+    border-bottom: inherit;
+}
+.header .border-header {
+    border-bottom: inherit;
+    padding-bottom: 0;
+}
+#slider-baner .owl-item .item h2 {
+    font-size: 80px;
+}
+#slider-baner .owl-item .item .text-slider {
+    font-size: 160px;
+    margin-top: 0px;
+}
+.title5, .title6 {
+margin-top: 30px;
+}
+.title3 {
+margin-top: 480px;
+	}
+.title3 h2{
+	font-size: 20px;
+}	
+.service {
+margin-top: 60px;
+}
+.service a{
+	float: right;
+}
+.service2 a{
+	float: right;
+}
+.result h3 {
+ font-size: 15px;
+}
+div.tab_img:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
+ height: 400px;
+ width: 330px;
+}
+.col-lg-5 > a:nth-child(1) > img:nth-child(1) {
+width: 331px;
+ height: 400px;
+}
+div.tab_img:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
+ width: 330px;
+height: 400px;
+}
+div.col-sm-4:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
+ width: 330px;
+ height: 400px;
+}
+div.col-lg-3:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+width: 331px;
+ height: 400px;
+}
+div.col-lg-3:nth-child(6) > a:nth-child(1) > img:nth-child(1) {
+ width: 330px;
+ height: 400px;
+}
+.tabs_con{
+overflow: hidden;
+}
+.box_service, .box_service2 {
+
+padding-right: 0px;
+ margin-right: 10px;
+}
+.box_service h3, .box_service2 h3 {
+ font-size: 15px;
+}
+.team img{
+	width: 218px;
+}
+.team hr {
+ width: 180px;
+}
+.team p {
+font-size: 12px;
+}
+.team ul {
+ margin-top: 35px;
+}
+.team ul li a i {
+ width: 15px;
+}
+}
+
+
+@media(max-width:767px){
+	#slider-baner .owl-item .item h2 {
+    font-size: 50px;
+
+}
+.name_menu {
+
+ color: #fff;
+ opacity: 0.5;
+}
+
+#slider-baner .owl-item .item .text-slider {
+    font-size: 80px;
+}
+.title3 {
+ margin-top: 360px;
+}
+.flexbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.flexbox_item {
+	width: 300px;
+}
+.service {
+margin-top: 60px;
+ right: 30px;
+}
+.tabs_sect .nav-tabs{
+	margin-top:30px;
+	}
+.nav-tabs li a {
+	font-size: 20px;
+}
+.box_service{
+	margin-top:20px;
+
+}
+.box_service2{
+	margin-top: 20px;
+}
+
+.baner-client{
+	background: url(../img/back4.png) no-repeat;
+	background-size: cover;
+	margin-top: 60px;
+	height: 300px;
+
+}
+#carousel .item {
+	color:#fff;
+    font-family: 'vidaloka_regular';
+    position: relative;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+#carousel .item h2{
+ font-size: 26px;
+}
+#carousel .item p{
+	margin-top: 20px;
+}
+#carousel .item ul li{
+	display: inline-block;
+	padding-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	}
+.team ul li a i {
+ width: 35px;
+}
+
+}
+@media(max-width:600px){
+	.nav-tabs li a {
+	font-size: 14px;
+}
+	}
+@media(max-width:500px){
+	#slider-baner .owl-item .item .text-slider {
+    font-size: 49px;
+}
+.title3 {
+ margin-top: 240px;
+}
+.title3 h2 {
+ font-size: 16px;
+}
+.nav-tabs li a {
+	font-size: 16px;
+}
+.tabs_sect .nav-tabs > li > a {
+ padding-top: 5px;
+ padding-bottom: 5px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+.title5 p {
+
+ font-size: 12px;
+ margin-top: 5px;
+}
+.connection input.email {
+
+ width: 210px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.connection input.sent {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+}
+
+#slider-baner .owl-item .item h2 {
+    font-size: 30px;
+}
+	}
+@media(max-width:470px){
+	.title5 p {
+ font-size: 10px;
+}
+.title3 h2 {
+ font-size: 14px;
+}
+	}

@@ -1,0 +1,606 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height:100%;
+	}
+body{
+	font-size:14px;
+	color:#000;
+	font-family: 'vidaloka_regular';
+	}
+.header{
+	z-index: 2;
+    position: relative;
+	padding-top:60px;
+	
+	}
+	.first{
+		padding-bottom:25px;
+		border-bottom:solid 1px #99888d;
+	}
+
+/*******section1*****/
+.baner-home{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	background:url(../img/fone-home.jpg) no-repeat;
+	background-size:cover;
+	background-position:center center;
+	padding-bottom:10px;
+	    width: 100%;
+	}
+#slider-baner .owl-item .item h2{
+	text-align:center;
+	color:#fff;
+	font-size:110px;
+	font-family: 'back_to_black_demoregular';
+	}
+#slider-baner .owl-item .item .text-slider{
+	font-size:280px;
+	font-family: 'back_to_black_demoregular';
+	text-align:center;
+	color:#fff;
+	margin-top: -34px;
+	}
+
+#slider-baner{
+	padding-top:300px;
+	}
+
+/*menu*/
+.responsive_menu{
+	display:none;
+	}
+   .nav-menu{
+	   padding-top:18px;
+	   display:flex;
+	   justify-content:center;
+	   }
+	   .nav-menu ul{
+		   display:flex;
+		   }
+		  .nav-menu ul li{
+			  list-style:none;
+			  margin-right:44px;
+		  }
+			.nav-menu ul li:last-child{
+				margin-right:0;
+				} 
+		   .nav-menu ul li a{
+			   transition:0.3s;
+			   color:#fff;
+			   text-transform:uppercase;
+			   font-size:13px;
+			   }
+			  .nav-menu ul li.active a,
+			  .nav-menu ul li a:hover{
+				  text-decoration:none;
+				  padding-bottom:37px;
+				  color:#ffeb3b;
+				  border-bottom:solid 2px #ffeb3b;
+				  }
+				  
+.header .border-header{
+	border-bottom:solid 1px #a29c9a;
+	padding-bottom:24px;
+	}
+/*menu*/
+
+.btn-search{
+	font-size:0;
+	background:url(../images/search.png) no-repeat;
+	background-position:center center;
+	width:43px;
+	height:37px;
+	border:inherit;
+	border-left:solid 1px #a29c9a;
+	outline:none;
+	}
+.pole-search{
+	display:none;
+	outline:none;
+	}
+
+/********section3*****/
+.title3{
+	position: relative;
+	margin-top: 820px;
+	font-family: 'vidaloka_regular';
+	text-align: center;
+	font-size: 34px;
+
+}
+.title3 h2{
+	color: #333333;
+	line-height: 2;
+}
+.title3 span{
+ color: #ffeb3b;
+ border-bottom: solid 2px #ffeb3b;
+}
+.service{
+	margin-top: 160px;
+}
+.service2{
+	margin-top: 100px;
+}
+.service .border_ser h3, .service2 .border_ser h3{
+	font-family: 'vidaloka_regular';
+	font-size: 15px;
+	color: #313131;
+	font-weight: bold;
+	text-align: left;
+}
+.service .border_ser, .service2 .border_ser{
+	border-left: 1px solid #f1f1f1;
+	
+	padding-left: 15px;
+
+}
+.service .border_ser p, .service2 .border_ser p{
+	font-family: 'vidaloka_regular';
+	font-size: 13px;
+	color: #969595;
+	text-align: left;
+}
+.service a i{
+	color: #f9f9f9;
+	transition:0.5s;
+}
+.service:hover a i{
+color: #ebd936;
+}
+.service2 a i{
+	color: #f9f9f9;
+	transition:0.5s;
+}
+.service2:hover a i{
+color: #ebd936;
+}
+/*************section4**********/
+.back_res{
+	background: url(../img/back4.png);
+	margin-top: 160px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.result{
+	text-align: center;
+}
+.result .numbers{
+	margin-top: 50px;
+	font-size: 45px;
+	color: #fff;
+}
+.result h3{
+	margin-top: 50px;
+	text-transform: uppercase;
+    font-size: 20px;
+    color: #fcde30;
+    font-family: 'vidaloka_regular';
+
+}
+/**********tabs for section4******/
+.title5{
+	text-align: center;
+	margin-top: 125px;
+	}
+	.title5 h2{
+		font-size: 36px;
+		color: #302c38;
+		font-family: 'vidaloka_regular';
+	}
+	.title5 p{
+		font-size: 16px;
+		color: #969595;
+		font-family: 'vidaloka_regular';
+		line-height: 1.5;
+		margin-top: 45px;
+	}
+	/******tabs sec****/
+	.tabs_sect .nav-tabs {
+   border-bottom: inherit;
+    display: flex;
+    justify-content: center;
+    margin: 115px 0px;
+}
+.tabs_sect .nav-tabs>li{
+	margin-right:10px;
+}
+.tabs_sect .nav-tabs>li.active>a, 
+.tabs_sect .nav-tabs>li.active>a:focus, 
+.tabs_sect .nav-tabs>li.active>a:hover {
+    color: #181a1f;
+    cursor: default;
+    background-color: #ffda00;
+   border: solid 2px #ffda00;
+   border-bottom-color: #ffda00;
+}
+.tabs_sect .nav-tabs>li>a {
+    margin-right: 0;
+    line-height: inherit;
+    border-radius: inherit;
+	 color: #181a1f;
+	 transition:0.3s;
+	 border: solid 2px #ffda00;
+	     padding: 10px 30px;
+}
+.tabs_sect .nav-tabs>li>a:hover {
+    border-color: #ffda00 #ffda00 #ffda00;
+	 background-color: #ffda00;
+}
+
+.tab-content .tab_img{
+	margin: 0;
+	padding: 0;  
+}
+.tabs_con{
+overflow: hidden;
+}
+
+
+
+.tab_img2 {
+  position: relative;
+  
+}
+
+.hoverEffect {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  transition: opacity  1s ease-in-out;
+  top: 0;
+  margin: 0px;
+  background-color: rgba(250,221,46, 0.6);
+
+}
+
+.tab_img2 img {
+  border: 1px solid #a0522d;
+  padding: 5px;
+}
+
+.tab_img2 , .tab_img2 img , .hoverEffect {
+  border-radius: 100%;
+  height: 175px;
+  width: 175px;
+}
+.tab_img2:hover .hoverEffect {
+  opacity: 1;
+}
+
+
+/*********hover*******/
+ .tab_img .hover_back{
+	display: none;
+	position: absolute;
+	left:0;
+top:0;
+width:100%;
+transition: 0.8s;
+
+
+}
+ .tab_img .hover_back h2{
+	font-size: 30px;
+	color: #000;
+	font-family: 'vidaloka_regular';
+	text-decoration: none;
+	transition: 0.8s;
+	
+}
+.tab_img .hover_back p{
+	font-size: 16px;
+	font-family: 'vidaloka_regular';
+	color:#302c38;
+	margin-top: 50px;
+	text-decoration: none;
+	transition: 0.8s;
+	
+}
+.tab_img .hover_back .button{
+	position: relative;
+	border: 2px solid #000;
+	text-decoration: none;
+	color: #000;
+	padding: 15px 40px;
+	font-family: 'vidaloka_regular';
+	top: 65px;
+	transition: 0.8s;
+}
+.tab_img .tabsimg{
+display:block;
+transition: 0.5s;
+}
+.tab-content .tab_img :hover.tabsimg{
+background: #fcde30;
+}
+.tab-content .tab_img :hover img{
+opacity: 0.4;
+filter: alpha(opacity=40);
+}
+
+  .tab_img a:hover{
+	text-decoration: none;
+}
+ .tab_img:hover .hover_back {
+ 	opacity: 1;	
+	display: block;
+ 
+}
+
+/********section6*****/
+.box_service, .box_service2{
+	position: relative;
+	padding-top: 90px;
+	padding-right: 50px;
+	padding-bottom: 60px;
+	width: 320px;
+    height: 270px;
+    padding: 30px 30px 30px 30px;
+    margin: 0 20px 30px 45px;
+	text-align: center;	
+}
+.box_service{
+	margin-top: 100px;
+	transition: 0.5s;
+}
+.box_service:nth-child(1){
+	background: #ff5252;
+	
+
+}
+div.container:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+ background: #4caf50;
+
+	transition: 0.5s;
+}
+div.container:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
+ background: #673ab7;
+}
+.box_service2:nth-child(1){
+	background: #2196f3;
+}
+div.container:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+background: #ffeb3b;
+}
+div.container:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(6) > div:nth-child(1) {
+ background: #00bcd4;
+}
+.box_service h3,.box_service2 h3 {
+	font-size: 20px;
+	color: #fff;
+	font-family: 'vidaloka_regular';
+	transition: 0.5s;
+}
+.box_service p,.box_service2 p{
+	color: #fff;
+	font-size:13px;
+	font-family: 'vidaloka_regular';
+	margin-top: 35px;
+	transition: 0.5s;
+}
+.box_service2 a{
+	text-decoration: underline;
+	color:#f7e247;
+	transition: 0.5s;
+	font-size: 14px;
+	font-family: 'vidaloka_regular';
+}
+.box_service a{
+	text-decoration: underline;
+	color: #f7e247;
+	transition: 0.5s;
+	font-family: 'vidaloka_regular';
+	font-size: 14px;
+}
+.box_service2:hover a{
+	color: #000;
+} 
+.box_service:hover a{
+	color: #000;
+} 
+.box_service2:hover h3{
+	color: #000;
+} 
+.box_service:hover h3{
+	color: #000;
+} 
+.box_service2:hover p{
+	color: #000;
+} 
+.box_service:hover p{
+	color: #000;
+} 
+/*********section7********/
+.baner-client{
+	background: url(../img/back4.png) no-repeat;
+	background-size: cover;
+	margin-top: 160px;
+	height: 600px;
+
+}
+#carousel .item {
+	color:#fff;
+    font-family: 'vidaloka_regular';
+    position: relative;
+    margin-top: 125px;
+}
+#carousel .item h2{
+ font-size: 36px;
+ text-align: left;
+ color: #fff;
+}
+#carousel .item p{
+	margin-top: 40px;
+	text-align: left;
+	font-size: 16px;
+
+}
+#carousel .item ul li{
+	display: inline-block;
+	padding-left: 60px;
+	margin-top: 130px;
+	margin-bottom: 160px;
+	text-align: left;
+}
+.carousel-indicators li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	text-indent: -999px;
+	cursor: pointer;
+	/* background-color: #000\9; */
+	background-color: #fff!important;
+	border: 0px!important;
+    border-radius: 0px !important;
+}
+.carousel-indicators li.active{
+	background-color: #ffda00!important;
+}
+
+/***********section8 team*******/
+.title6{
+	text-align: center;
+	margin-top: 125px;
+	}
+	.title6 h2{
+		font-size: 51px;
+		color: #000;
+		font-family: 'vidaloka_regular';
+	}
+	.title6 p{
+		font-size: 16px;
+		color: #bdbcbc;
+		font-family: 'vidaloka_regular';
+		line-height: 1.5;
+		margin-top: 45px;
+		
+	}
+.team{
+	margin-top: 115px;
+	position: relative;
+	border: 1px solid #f1f1f1;
+	font-family: 'vidaloka_regular';
+}
+ img.team {
+ 	widows: 360px;
+ }
+ .team h3{
+ 	text-align: center;
+ 	color: #000;
+ 	margin-bottom: 30px; 
+ 	font-size: 16px;
+ }
+ .team p{
+ 	color: #bdbcbc;
+ 	text-align: center;
+ 	padding-bottom: 30px;
+ 	margin-right: 20px;
+ 	font-size: 13px;
+ }
+ .team hr{
+ 	width: 310px;
+ 	color: #dadada;
+ 	margin: 0 auto;
+ 	 }
+.team ul{
+	text-align: center;
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+.team ul li{
+	list-style: none;
+	display: inline-block;
+	padding-right: 20px;	
+}
+
+.team ul li a {
+	color: #dadada;
+	border-radius: 50%;
+	border:1px solid #dadada;
+	padding: 5px;
+	transition: 0.4s;
+}
+.team ul li a i {
+ width: 35px;
+}
+
+.team ul li:hover a{
+	background: #ffeb3b;
+	border:1px solid #ffeb3b;
+	color: #fff;
+}
+
+
+/*************join us******/
+.contact{
+	background: url(../img/back4.png) no-repeat;
+	background-size: cover;
+	margin-top: 140px;
+	opacity: 0.9;
+	padding-bottom: 100px;
+}
+.connection{
+	margin-top: 60px;
+	text-align: center;
+	z-index: 3;
+}
+.connection input.email{
+	padding: 20px 0 20px 30px ;
+	width: 410px;
+	background: rgba(92,95,102,0.3);
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'vidaloka_regular';
+	border: none;
+	margin-right: 20px;
+}
+.connection input.sent{
+	padding: 20px 30px 20px 30px;
+	background: rgba(92,95,102,0.3);
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'vidaloka_regular';
+	border: none;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+.connection input.sent:hover{
+    background: #ffeb3b;
+    color: #000;	
+}
+/*********footer*******/
+.footer{
+	background: url(../img/bg-footer.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.footer .end{
+	padding-bottom: 40px;
+	color: #fff;
+}
+.footer .end span{
+  color:#ead839;
+}
+ #share42 > a:nth-child(1) {
+margin-right: 20px !important;
+}
+#share42 > a:nth-child(2) {
+margin-right: 20px !important;
+}
