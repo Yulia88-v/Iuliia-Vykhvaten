@@ -26,8 +26,7 @@
 <div class="form" >
 	<input type="text" id="name" class="name" placeholder="Имя" maxlength="30">
 	<script type="text/javascript">
-		let name=document.getElementByid('name'); 
-    name.placeholder=document.write(Ваше имя);
+		let name=document.getElementById("myText").placeholder = "Type name here..";
 	</script>
 	<input type="text" id="phone" placeholder="Телефон"maxlength="30">
 	<input type="textarea" name ="textarea" id="comments" placeholder="Сообщение"	maxlength="140">
@@ -52,9 +51,14 @@
 	price.style.marginLeft = "15px";
 	</script>
 
-
+<script type="text/javascript">
+		document.querySelector('#name').placeholder = 'Ваше имя';
+		document.querySelector('#phone').placeholder = 'Ваш телефон';
+		document.querySelector('#comments').placeholder = 'Ваше сообщение';
+	</script>
 
 </body>
+
 <script type="text/javascript">
 	
 let age=prompt('Тебе есть 18 лет?');
@@ -64,9 +68,8 @@ if(age==18){
 	alert('Вам сюда рано');
 };
 
-
-
-
 </script>
+
+
 
 </html>
