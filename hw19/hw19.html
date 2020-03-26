@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Console</title>
+</head>
+<style type="text/css">
+	.form{
+		width: 200px}
+	
+	.form input{
+		margin-top:15px;
+		margin-left: 15px;
+		width: 160px;
+	}
+	.send{
+		margin-top:15px;
+		margin-left: 15px;
+	}
+</style>
+<body>
+
+
+	<h2>Форма</h2>
+<form >
+<div class="form" >
+	<input type="text" id="name" class="name" placeholder="Имя" maxlength="30">
+	<script type="text/javascript">
+		let name=document.getElementByid('name'); 
+    name.placeholder=document.write(Ваше имя);
+	</script>
+	<input type="text" id="phone" placeholder="Телефон"maxlength="30">
+	<input type="textarea" name ="textarea" id="comments" placeholder="Сообщение"	maxlength="140">
+</div>
+	<div class="send">
+        <button type="button" id="button">Отправить</button>
+        <button type="button" id="button" onclick="form.reset()">Очистить</button>
+    </div>
+</form>
+<div class="old">2500 UAH</div>
+<div class="new"></div>
+<script type="text/javascript">
+
+
+    let oldprice= document.querySelector('.old'); 
+	oldprice.innerHTML = '<p>Old price  <del> 2500 UAH</del></p>';
+	oldprice.style.marginLeft = "15px";
+
+	let price= document.querySelector('.new'); 
+	price.innerHTML = '<p>New price  <span> 1500 UAH</span></p>';
+	price.style.color = "red";
+	price.style.marginLeft = "15px";
+	</script>
+
+
+
+</body>
+<script type="text/javascript">
+	
+let age=prompt('Тебе есть 18 лет?');
+if(age==18){
+	alert('Вы совершенолетний');
+}else{
+	alert('Вам сюда рано');
+};
+
+
+
+
+</script>
+
+</html>
