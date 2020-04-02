@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Console</title>
+</head>
+
+<div class="elem">ромашка</div>
+<div class="elem">тюльпан</div>
+<div class="elem">роза</div>
+<div id="elem2">фиалка</div>
+<div id="elem3">малина</div>
+
+<body>
+<script type="text/javascript">
+	
+const demoClasses = document.querySelectorAll('.elem');
+
+demoClasses.forEach(element => {
+  element.innerHTML = '<b>All classes updated.</b>';
+});
+let elem2 = document.getElementById('elem2'); 
+	elem2.innerHTML = '2';
+let elem3 = document.getElementById('elem3'); 
+	elem3.innerHTML = '3';
+
+</script>
+</body>
+
+
+</html>
