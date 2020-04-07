@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Home work22</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/******IndexOf и lastIndexOf (Привет всем я люблю этот мир потому что я очень очень добрый)найти совпадающее слова (очень и добрый). lastIndexOf (найти слово но).*****/
+
+		let love = "Привет всем я люблю этот мир потому что я очень очень добрый";
+        document.write(love.indexOf("очень")+ '<br />');
+        document.write(love.indexOf("добрый" )+ '<br />');
+        document.write(love.lastIndexOf("но" )+ '<br />');
+
+        /******* В функции вернуть 2,4 массив, остальные удалить*****/
+        let arr = [1,2,3,4,5];
+        let result = arr.map(
+        function(elem, index, arr){
+                return arr=[2,4];
+
+       });
+        document.write(result);
+
+
+        /******Создать массив через метод new Map создать 8 ключей и их значениями. вывести количество  ключей значений, удалить 6,7,8 ключей после 
+вывести по очереди все ключи и значения перебрав их через for of*****/
+
+       let recipeMap = new Map([
+                 ["огурец", 500],
+                 ["помидор", 350],
+                 ["лук",    50],
+                 ["перец",200],
+                 ["фета",50],
+                 ["оливки",60],
+                 ["соль", 5],
+                 ["заправка", 15]
+]);
+       alert(recipeMap.size);
+       recipeMap.delete('оливки');
+       recipeMap.delete('соль');
+       recipeMap.delete('заправка');
+       for (let entry of recipeMap) { 
+  alert(entry); 
+}
+    /******   Создать объект с ключами Имя, должность, адрес и компания. после созданного объекта создать фамилию и удалить фирму. Вывести через документ все значения и ключи.*****/  
+    let obj={
+        		'name':'yulia  ',
+        		'position':'developer  ',
+        		'address':'kyiv  ',
+        		'company':'comp  '
+        	};
+        	obj["surname"] = "vykhvaten  "	
+            delete obj["company"];
+
+            for(key in obj) {
+  document.write(key + " = " + obj[key]);
+}
+
+	</script>
+
+</body>
+</html>
