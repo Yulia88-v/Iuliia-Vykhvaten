@@ -5,6 +5,10 @@ h1{
     margin-left: 10px;
     text-transform: uppercase;
 }
+body table thead{
+	color: #423361;
+	font-size: 20px;
+}
 td{
 	text-align: center;
 	font-size: 14px;

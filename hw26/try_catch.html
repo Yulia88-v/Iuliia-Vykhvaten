@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open window</title>
+</head>
+<body>
+	<div></div>
+</body>
+<script type="text/javascript">
+	
+/********4) try catch -  допустить синтаксическую ошибку вывести через alert (10 балов)****/
+
+try{
+	document.write('начало блока try' + '<br/>');
+	
+	document.write(user.name + '<br/>');
+	}catch(err){
+		alert('Ошибка в коде');
+		}
+
+/********5) Создать текстовые объекты через JSON про парсить (имя, возраст. фамилия) и проверить на ошибки через try catch (20 балов)*****/////
+let json = '{"surname":"vykhvaten","name":"iuiia", "age": 31}';;
+
+try {
+
+  let user2 = JSON.parse(json); 
+  alert( user2.name ); 
+
+} catch (e) {
+  
+  alert( "Извините, в данных ошибка, мы попробуем получить их ещё раз." );
+  
+}
+
+</script>
+
+</html>

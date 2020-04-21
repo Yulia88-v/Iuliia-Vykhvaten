@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>classwork25</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert('Привет студент, мне очень приятно что именно ты попал ко мне на курс. Ты самый лучший студент в мире, самый старательный и добрый'.replace(/студент/ig,"Юля"));
+
+		
+	
+
+	</script>
+<div id=elem1></div>
+</body>
+<script type="text/javascript">
+	let user = {
+		age: 21,
+		name: ' Екатерина ',
+		surname: ' Петрова '
+		};
+		
+	let admin = {
+		isAdmin: false,
+		isEmailConfirmed: true
+		};
+	
+	let position ={
+		work: 'Школа',
+		posit:'Учитель',
+		salary:'2500'
+		};
+
+	function copy(){
+		 let dst = arguments[0];
+		 
+		 for(let i=1; i< arguments.length; i++){
+			  let arg = arguments[i];
+			  for(let key in arg){
+				  dst[key] = arg[key];
+				  }
+			 }
+			 return dst;
+		}	
+	copy(user, admin, position);
+	
+	let elem2 = document.getElementById('elem1'); 
+	elem2.innerHTML = ('Фамилия: '+user.surname+ ';<br/>'+'Имя: '+user.name + ';<br/>'+'Возраст: '+user.age+ ';<br/>'+'<br/>'+'Место работы: '+position.work+';<br/>'+'Должность: '+position.posit+';<br/>'+'Зарплата: '+position.salary+';<br/>');
+
+</script>
+</html>
