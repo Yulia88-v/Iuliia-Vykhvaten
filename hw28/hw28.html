@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HW28</title>
+</head>
+<style type="text/css">
+	div{
+        margin-top: 20px;
+    }
+    #picHolder {
+        width: 300px;
+        height: 250px;
+    }
+    
+</style>
+<body>
+
+    <!-----Обратись ко всем тегам div (3 тега div с текстом) поменяй фон на зеленый. А для тега (a) сделать при клике синий цвет. (50 балов)---->
+
+     <div >Текст 1</div>
+     <div >Текст 2</div>
+     <div >Текст 3</div>
+     <div><a href="">Проба</a></div>
+     
+
+     <button onClick="myFunc5()">Нажми и получишь результат</button>
+
+
+	<script type="text/javascript">
+		
+        function myFunc5(){
+        let tex= document.getElementsByTagName('div');
+        for(let i=0; i < tex.length; i++){
+        tex[i].style.background ='green';
+    }
+    let tex2= document.getElementsByTagName('a');
+        for(let i=0; i < tex.length; i++){
+        tex2[i].style.background ='blue';
+
+}
+}
+	</script>
+
+<!-------Добавить две картинки машины разные, сделать изменение onchange меняется картинка
+ (50 балов)---->
+
+<div class="avto">
+ <img id="picHolder" src="img/1.jpg" alt="Автомобиль Toyota Urban Cruiser"/>
+<form name="picForm">
+  <select name="picSelect">
+    <option value="img/1.jpg">Автомобиль Toyota Urban Cruiser </option>
+    <option value="img/2.jpg">Автомобиль Toyota Yaris </option>
+    <option value="img/3.jpg">Автомобиль Toyota C-HR</option>
+   </select> 
+</form>
+</div>
+
+<script type="text/javascript">
+    picForm.picSelect.onchange = function(){
+   picHolder.src = this.value; 
+ } 
+</script>
+
+
+
+</body>
+</html>
