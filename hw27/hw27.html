@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Window properties</title>
+</head>
+<style type="text/css">
+
+    .scroll{
+     position: relative;
+      height:300px;
+      width:300px;
+      top: 3000px;
+      left: 7000px;
+      background: blue;
+
+  
+    }
+</style>
+<body>
+  <div class ="images">
+ <iframe width="560" height="350" src="https://www.stb.ua/wp-content/uploads/2017/05/23/iStock-5209344781.jpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="350" src="https://www.stb.ua/wp-content/uploads/2017/05/23/iStock-5209344781.jpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>
+<div><button onClick="myFunction1()">Количество элементов</button></div>
+<div><button onClick="myFunction2()">Ширина и высота браузера</button></div>
+<div> <button onClick="myFunction3()">Прокрутка</button></div>
+
+
+<div id="elem"></div>
+<div class="scroll"></div>
+<script type="text/javascript">
+  function myFunction1(){
+    let x = window.length;
+    document.getElementById("elem").innerHTML = x;
+   }
+function myFunction2(){
+   let w = window.innerWidth;
+   let h = window.innerHeight;
+   
+   document.getElementById("elem").innerHTML = "Width" + w + "<br /> Height" + h;
+   }
+
+   function myFunction3(){
+   window.scrollBy(3000, 3000);
+   alert("pageXOffset:" + window.pageXOffset + ", pageYOffset" + window.pageYOffset );
+   }
+
+</script>
+
+</body>
+</script>
+
+</html>

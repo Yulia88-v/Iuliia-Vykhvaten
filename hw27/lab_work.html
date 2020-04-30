@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Window properties</title>
+</head>
+<style type="text/css">
+	.text {
+            position: absolute;
+            left: 200px;
+            top:750px;
+            width: 200px;
+            height: 200px;
+            background-color: #0000a0;
+            color: yellow;
+        }
+</style>
+<body>
+<div><button onClick="openWin()">Открыть окно</button></div>
+<div><button onClick="resizeWin()">Изменить размер нового окна</button></div>
+<div> <button onClick="resizeB()">Изменить размер текущего окна</button></div>
+<div><button onClick="scrolll()">Прокрутка по горизонтале в новом окне</button></div>
+<div><button onClick="scrolld()">Прокрутка по вертикали текущего окна</button></div>
+<div><button onClick="focusWin()">Фокус нового окна</button></div>
+<div><button onClick="focusBlurWin()">Фокус Blur нового окна</button></div>
+<div><button onClick="closeWin()">Закрыть окно</button></div>
+<div><button onClick="window.print()">Print</button></div>
+<div class="text">Прокрутка как по вертикали так и по горизонтали</div>
+<script type="text/javascript">
+	let myWindow;
+ 
+ function openWin(){
+	  myWindow = window.open("","myWindow","width=400, height=200,left=300,top=200");
+	  myWindow.document.write("<p>Первый пункт</p>");
+	 }
+	 function resizeWin() {
+  myWindow.resizeTo(500, 500);                                       
+}
+function resizeB() {
+    window.resizeBy(700, 600);
+        }
+ function scrolll() {
+           myWindow.scrollBy(100, 1000);
+        }
+function scrolld() {
+           window.scrollTo(200, 750);
+        }
+function focusWin(){
+	myWindow.focus();
+}
+ setTimeout (function focusBlurWin(){
+	myWindow.blur()},3000);
+
+         function closeWin() {
+  myWindow.close();                                       
+}
+</script>
+</body>
+<script type="text/javascript">
+	 function resizeBrow() {
+            window.resizeBy(-350, -350);
+        }
+     
+        function window.print(){
+        	window.print();
+        }
+    
+</script>
+
+</html>

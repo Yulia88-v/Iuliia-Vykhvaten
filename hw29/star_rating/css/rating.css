@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+.rating{
+	display: flex;
+}
+.fa-star{
+	color:grey;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+.fa-star.active{
+	color: yellow;
+}
+.fa-thumbs-up{
+	color:grey;
+	border: 2px solid #fff;
+	cursor: pointer;
+}

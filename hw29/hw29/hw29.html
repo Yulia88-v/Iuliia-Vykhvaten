@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    /************First task********/
+
+    .tree li{
+      font-size: 16px;
+      color:#61006e;
+    }
+    .tree span:hover {
+      font-weight: bold;
+      color:#a700f2;
+      font-size: 18px;
+    }
+
+    .tree span {
+      cursor: pointer;
+    }
+    /*********Second task*******/
+    button{
+      margin-top: 30px;
+      color: #61006e;
+      border-radius: 30px;
+
+    }
+  </style>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<!---------------Создайте дерево, которое по клику на заголовок скрывает-показывает потомков:--------->
+
+  <ul class="tree" id="tree">
+    <li>Семейное дерево
+      <ul>
+        <li>Фамилия
+          <ul>
+            <li>Петров</li>
+            <li>Васильев</li>
+            <li>Муравьев</li>
+            <li>Полюшко</li>
+          </ul>
+        </li>
+        <li>Имя женское
+          <ul>
+            <li>Катя</li>
+            <li>Люда</li>
+            <li>Маша</li>
+            <li>Галя</li>
+          </ul>
+        </li>
+        <li>Имя мужское
+          <ul>
+            <li>Адриан</li>
+            <li>Валентин</li>
+            <li>Мурат</li>
+            <li>Матвей</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+<!--------нужно доработать, когда форма открылась менять тест закрыть форму email, делать через события и сованный класс желательно------>
+<button data-toggle-id="subscrible-mail" class="btn"data-toggle-text="Скрыть форму подписки">Показать форму подписки</button>
+<form id="subscrible-mail" hidden>
+ Ваша почта:<br />
+ <input type="email" placeholder="E-mail" />
+</form>
+
+
+
+
+
+    
+  <script>
+    /********First Task******/
+    
+    for (let li of tree.querySelectorAll('li')) {
+      let span = document.createElement('span');
+      li.prepend(span);
+      span.append(span.nextSibling);
+    }
+
+   
+    tree.onclick = function(event) {
+
+      if (event.target.tagName != 'SPAN') {
+        return;
+      }
+
+      let tree_name = event.target.parentNode.querySelector('ul');
+      if (!tree_name) return; 
+
+      tree_name.hidden = !tree_name.hidden;
+    }
+  </script>
+
+
+
+  <script>
+
+  document.addEventListener('click', function(event){
+  let id = event.target.dataset.toggleId;
+  if(!id) return;
+  let elem = document.getElementById(id);
+  
+  elem.hidden = !elem.hidden;
+
+  });
+  </script>
+
+</body>
+</html>
