@@ -62,11 +62,12 @@
       </ul>
     </li>
 <!--------нужно доработать, когда форма открылась менять тест закрыть форму email, делать через события и сованный класс желательно------>
-<button data-toggle-id="subscrible-mail" class="btn"data-toggle-text="Скрыть форму подписки">Показать форму подписки</button>
+<button data-toggle-id="subscrible-mail" id="mybtn">Показать форму подписки</button>
 <form id="subscrible-mail" hidden>
  Ваша почта:<br />
  <input type="email" placeholder="E-mail" />
 </form>
+
 
 
 
@@ -108,6 +109,13 @@
   elem.hidden = !elem.hidden;
 
   });
+let btn = document.getElementById("mybtn");
+  btn.addEventListener('click', function() {
+    btn.innerHTML =
+      (btn.innerHTML === 'Показать форму подписки') ? btn.innerHTML = 'Скрыть форму подписки' : btn.innerHTML = 'Показать форму подписки';
+  });
+
+
   </script>
 
 </body>
