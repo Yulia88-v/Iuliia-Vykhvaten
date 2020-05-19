@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>json</title>
+</head>
+<body>
+<script>
+	
+	
+    /********oreily*******/
+	let oreily = {
+		name:'O\'Reily'
+	};
+	document.write(JSON.stringify(oreily)+"</br>");
+	document.write(oreily.name+"</br>"+"</br>");
+
+
+/*********ivan********/
+
+	let ivan={"name":"Иван","age":26, "birthday":{"year":1990, "month":"июнь", "day":29}};
+	let ivanStr =JSON.stringify(ivan);
+	let res1 = JSON.parse(ivanStr);
+    
+    document.write(ivanStr+"</br>")
+	document.write(res1.name+" - "+res1.age+"</br>"+"Дата рождения"+" - "+res1.birthday.day+" "+res1.birthday.month+" "+res1.birthday.year+"</br>"+"</br>");
+
+	/******john********/
+	let john = {"name": "John","age": 26};
+    let johnStr =JSON.stringify(john);
+	let res2 = JSON.parse(johnStr);
+    document.write(johnStr+"</br>")
+	document.write(res2.name+" - "+res2.age+"</br>"+"</br>");
+
+	/*********kamil********/
+	let kamil = {"name": "Камиль","age": 27};
+  let kamilStr = JSON.stringify(kamil);
+  let res3 = JSON.parse(kamilStr);
+  document.write(kamilStr+"</br>")
+  document.write(res3.name+" - "+res3.age+"</br>"+"</br>");
+
+
+</script>
+</body>
+</html>

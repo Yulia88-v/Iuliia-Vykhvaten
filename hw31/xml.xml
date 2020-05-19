@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+	    <name>Евгений Онегин</name>
+		<type>роман</type>
+		<author birthday="06.06.1799">А.С.Пушкин</author>
+	</book>
+	
+	<book>
+	    <name>Колобок</name>
+		<type>сказка</type>
+		<author birthday="02.08.1865">Е.А.Константин</author>
+	</book>
+	
+	<book>
+	    <name>Война и Мир</name>
+		<type>роман</type>
+		<author birthday="09.09.1828">Л.Н.Толстой</author>
+	</book>
+</books>
