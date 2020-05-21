@@ -1,0 +1,28 @@
+.NavMenu{
+	
+	height:600px;
+	width:20%;
+	float:left;
+    background-image: linear-gradient(to top, rgba(237,0,176,0.30),rgba(255,207,245,0.30));
+    padding: 100px 0;
+
+}
+
+
+.NavMenu .nav {
+	list-style: none;
+	text-align: center;
+	
+}
+.NavMenu .nav .item{
+	margin-bottom: 30px;
+}
+.NavMenu .nav .item a{
+	text-decoration: none;
+	font-size: 40px;
+	color: #7700b3;
+	transition: 0.4s;
+}
+.NavMenu .nav .item a:hover{
+	color: #0097ff;
+}
